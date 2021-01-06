@@ -10,6 +10,8 @@ Unreleased
 - Use ``asgiref`` when available instead of thread locals (gh-747)
 - Sort imports with isort (gh-751)
 - Queryset ``history.as_of`` speed improvements by calculating in the DB (gh-758)
+- Support ``included_fields`` for ``history.diff_against`` (gh-776)
+- Improve performance of ``history.diff_against`` by reducing number of queries to 0 in most cases (gh-776)
 
 2.12.0 (2020-10-14)
 -------------------
